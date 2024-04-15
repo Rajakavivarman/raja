@@ -1,0 +1,34 @@
+clc;
+clf;
+clear all;
+n=-10:0.1:10;
+a=0.8;
+b=-0.8;
+c=1.25;
+d=-1.25;
+x1=a^n;
+subplot(2,2,1);
+plot2d3(n,x1);
+xlabel('n');
+ylabel('amplitude');
+title('complex exponential signal 0,a,1');
+x2=b^n;
+subplot(2,2,2);
+plot2d3(n,x2);
+xlabel('n');
+ylabel('amplitude');
+title('complex exponential signal -1<a<0');
+x3=c^n;
+subplot(2,2,3);
+plot2d3(n,x3);
+xlabel('n');
+ylabel('amplitude');
+title('complex exponential signal a>1');
+x4=d^n;
+subplot(2,2,4);
+plot2d3(n,x4);
+xlabel('n');
+ylabel('amplitude');
+title('complex exponential signal a<-1');
+
+
