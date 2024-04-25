@@ -1,4 +1,4 @@
-Oclc;
+clc;
 function[za]=ztransfer(sequence,n)
     z=poly(0,'z','r')
     za=sequence*(1/z)^n'
